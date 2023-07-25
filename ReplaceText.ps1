@@ -4,9 +4,9 @@
 
 # Drag and drop files or read from arguments with $Args[$i]
 # Example text to search and replace
-#   hostname "PTAMC03006SA01"
-#   ip default-gateway 10.25.6.254
-#   ip address 10.25.6.240 255.255.255.0
+#   hostname "host"
+#   ip default-gateway 127.0.0.1
+#   ip address 127.0.0.1 255.255.255.0
 #
 #   hostname "$target_hostname"
 #   ip default-gateway $target_dgw
