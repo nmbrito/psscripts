@@ -143,7 +143,7 @@ function Get-ReplaceConfigTextFilesFromDir
 function Set-ReplaceConfigTextWriteInfo
 {
     ( $PSVar_CopiedTargetContent ) | Foreach-Object {
-        $_ -replace "hostname "${PSVar_RegexPatternHostname}"",                             "hostname ${PSVar_TargetHostname}" `
+        $_ -replace "hostname `"${PSVar_RegexPatternHostname}`"",                             "hostname `"${PSVar_TargetHostname}`"" `
            -replace "ip default-gateway ${PSVar_RegexPatternDefaultGateway}",               "ip default-gateway ${PSVar_TargetDefaultGateway}" `
            -replace "ip address ${PSVar_RegexPatternIP} ${PSVar_RegexPatternSubnetMask}",   "ip address ${PSVar_TargetIP} ${PSVar_TargetSubnetMask}" `
         } | Set-Content -Path $PSVar_CopiedTarget
